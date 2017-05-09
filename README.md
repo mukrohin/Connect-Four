@@ -19,5 +19,5 @@ GUI
 3. animation - 90 minutes
 
 mouse controls
-1. tracking - 30 minutes
+1. tracking - 30 minutes - I don't think we need mouse controls, we can have the user input what number row they want to drop their piece in. Also, I was thinking of using x's and o's as our pieces.
 2. interaction - 60 minutes
