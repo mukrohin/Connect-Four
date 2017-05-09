@@ -8,8 +8,10 @@ goals
 5. opponent AI
 
 game code
-1. coding - 180 minutes
-2. error checking - 20 minutes
+1. grid - 30 minutes
+2. checkers - 30 minutes
+3. interactions - 90 minutes
+4. win conditions - 30 minutes
 
 GUI
 1. checkers - 30 minutes
