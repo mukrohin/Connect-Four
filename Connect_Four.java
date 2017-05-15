@@ -1,7 +1,7 @@
 public class Connect_Four
 {
-private final static int column = 8;
-private final static int row = 8;
+private final static int column = 7;
+private final static int row = 6;
 private static String[][] board = new String[row][column];
 private String player1, player2;
 
