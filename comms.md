@@ -17,3 +17,4 @@ Allen - 5/16/2017
 v0.03
 - Descending diagonal has been implemented to the checkForWinner method
 - Diagonal win conditions have not been completely tested yet
+- Assuming my method works correctly, we should move on to finding a way for players to alternate turns and implementing the scanner
