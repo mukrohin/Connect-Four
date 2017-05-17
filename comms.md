@@ -18,3 +18,11 @@ v0.03
 - Descending diagonal has been implemented to the checkForWinner method
 - Diagonal win conditions have not been completely tested yet
 - Assuming my method works correctly, we should move on to finding a way for players to alternate turns and implementing the scanner
+
+Rohin - 05/17/2017
+- In the betterGrid branch, the game is working
+- The launcher is ConnectFour.java
+- The grid creator with win checking implemented is Grid.java
+- You should be able to play a game of Connect Four with these two programs.
+- If you see anything to work on in these codes, do it.
+- Otherwise, we should star working on the GUI.
