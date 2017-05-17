@@ -67,36 +67,60 @@ public class Grid {
 // returns true is the player has won, returns false if
 // the player has not won.
 
-public boolean checkForWinner(int pNum){
+public boolean checkForWinner(int pNum)
+{
 
     // check for horizontal winners
-    for (int c = 0; c<4 ; c++ ){
-        for (int r = 0; r<6; r++){
+    for (int c = 0; c<4 ; c++ )
+    {
+        for (int r = 0; r<6; r++)
+	{
             if (this.grid[r][c] == pNum && this.grid[r][c+1] == pNum && this.grid[r][c+2] == pNum 
-            && this.grid[r][c+3] == pNum){
+            && this.grid[r][c+3] == pNum)
+	    {
                 return true;
             }           
         }
     }
     
     // check for vertical winners
-    for (int r = 0; r<3 ; r++ ){
-        for (int c = 0; c<7; c++){
+    for (int r = 0; r<3 ; r++ )
+    {
+        for (int c = 0; c<7; c++)
+	{
             if (this.grid[r][c] == pNum && this.grid[r+1][c] == pNum
-            && this.grid[r+2][c] == pNum && this.grid[r+3][c] == pNum){
+            && this.grid[r+2][c] == pNum && this.grid[r+3][c] == pNum)
+	    {
                 return true;
             }           
         }
     }
-    // Diagonal check one way
-    for (int r=3; r<6; r++){
-        for (int c=0; c<4; c++){
+    // check for ascending diagonal winners
+    for (int r=3; r<6; r++)
+    {
+        for (int c=0; c<4; c++)
+	{
             if (this.grid[r][c] == pNum && this.grid[r-1][c+1] == pNum && this.grid[r-2][c+2] == pNum
             && this.grid[r-3][c+3] == pNum)
+	    {
                 return true;
+	    }
         }
     }
-    // Still need to implemenet other way for diagonals
+    // check for descending diagonal winners
+    for(int r=3; r<6; r++)
+    {
+	  for(int c =0; c<7; c++)
+	  {
+		  if(this.grid[r][c] == pNum && this.grid[r-1][c-1] == pNum && this.grid[r-2][c-2] == pNum
+		  && this.grid[r-3][c-3] == pNum)
+		  {
+			  return true;
+		  }
+	  }
+    }
     return false;
 }
+	
+	
 }
