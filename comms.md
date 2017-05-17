@@ -26,3 +26,9 @@ Rohin - 05/17/2017
 - You should be able to play a game of Connect Four with these two programs.
 - If you see anything to work on in these codes, do it.
 - Otherwise, we should star working on the GUI.
+
+Allen - 5/17
+----------------
+- I am adding a score keeper and a rematch option. I also added column numbers to the grid in case we don't end up creating a GUI. 
+- I haven't added the changes on here yet because I haven't finished
+- I haven't done any work on the GUI 
