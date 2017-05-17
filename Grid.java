@@ -65,7 +65,7 @@ public class Grid {
 	public boolean winCheck(int pNum) {
 		
 		//check for winner horizontally
-		for(int c=0; c<6; c++) {
+		for(int c=0; c<4; c++) {
 			for(int r=0; r<6; r++) {
 				if(grid[r][c] == pNum && grid[r][c+1] == pNum
 						&& grid[r][c+2] == pNum && grid[r][c+3] == pNum) {
