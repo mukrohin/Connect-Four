@@ -33,7 +33,7 @@ public class ConnectFour {
 			stand.place(pNum, c);
 			System.out.println(stand.toString() +"\n");
 		}
-		while(stand.checkForWinner(pNum) == false);
+		while(stand.winCheck(pNum) == false);
 		
 		System.out.println("Player " +pNum +" wins!");
 		input.close();
