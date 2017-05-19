@@ -36,3 +36,4 @@ Allen - 5/17
 Rohin - 05/19/2017
 - I can't make the GUI today because I cannot download e(fx)clipse, so I will have to work on this at home.
 - We are ready to merge the betterArray branch with master, so I've done that.
+- From now on, all the work on the game will be completed directly in master.
