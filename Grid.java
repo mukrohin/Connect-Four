@@ -48,6 +48,7 @@ public class Grid {
 	//outputs the stand as a string
 	public String toString() {
 		String output = new String();
+		output = " 1, 2, 3, 4, 5, 6, 7\n -------------------\n";
 		for(int r=0; r<6; r++) {
 			output += Arrays.toString(grid[r]);
 			if(r < 5) {
