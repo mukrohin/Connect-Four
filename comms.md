@@ -32,3 +32,7 @@ Allen - 5/17
 - I am adding a score keeper and a rematch option. I also added column numbers to the grid in case we don't end up creating a GUI. 
 - I haven't added the changes on here yet because I haven't finished
 - I haven't done any work on the GUI 
+
+Rohin - 05/19/2017
+- I can't make the GUI today because I cannot download e(fx)clipse, so I will have to work on this at home.
+- We are ready to merge the betterArray branch with master, so I've done that.
