@@ -20,6 +20,7 @@ public class Grid {
 	public Grid() {
 		grid = new int[6][7];
 	}
+   
 	
 	/********
 	 MUTATORS
@@ -48,7 +49,7 @@ public class Grid {
 	//outputs the stand as a string
 	public String toString() {
 		String output = new String();
-		output = " 1, 2, 3, 4, 5, 6, 7\n -------------------\n";
+      output = " 1, 2, 3, 4, 5, 6, 7\n -------------------\n";
 		for(int r=0; r<6; r++) {
 			output += Arrays.toString(grid[r]);
 			if(r < 5) {
@@ -58,7 +59,19 @@ public class Grid {
 		
 		return(output);
 	}
-	
+   //this method doesn't need a
+   //parameter and doesn't have an 
+   //output
+   //it resets the board so players
+   //can play again
+	public void reset() {
+      for(int r=0; r<6; r++) {
+         for(int c=0; c<7; c++){
+            grid[r][c] = 0;
+            }
+            }
+           
+            }
 	// This method uses the player number and checks if
 	// that player has met a win condition of the game
 	// returns true is the player has won, returns false if
@@ -109,58 +122,5 @@ public class Grid {
 		return(false);
 	}
 	
-	/*public boolean checkForWinner(int pNum)
-	{
-
-	    // check for horizontal winners
-	    for (int c = 0; c<4 ; c++ )
-	    {
-	        for (int r = 0; r<6; r++)
-		{
-	            if (this.grid[r][c] == pNum && this.grid[r][c+1] == pNum && this.grid[r][c+2] == pNum 
-	            && this.grid[r][c+3] == pNum)
-		    {
-	                return true;
-	            }           
-	        }
-	    }
-	    
-	    // check for vertical winners
-	    for (int r = 0; r<3 ; r++ )
-	    {
-	        for (int c = 0; c<7; c++)
-		{
-	            if (this.grid[r][c] == pNum && this.grid[r+1][c] == pNum
-	            && this.grid[r+2][c] == pNum && this.grid[r+3][c] == pNum)
-		    {
-	                return true;
-	            }           
-	        }
-	    }
-	    // check for ascending diagonal winners
-	    for (int r=3; r<6; r++)
-	    {
-	        for (int c=0; c<4; c++)
-		{
-	            if (this.grid[r][c] == pNum && this.grid[r-1][c+1] == pNum && this.grid[r-2][c+2] == pNum
-	            && this.grid[r-3][c+3] == pNum)
-		    {
-	                return true;
-		    }
-	        }
-	    }
-	    // check for descending diagonal winners
-	    for(int r=3; r<6; r++)
-	    {
-		  for(int c=3; c<7; c++)
-		  {
-			  if(this.grid[r][c] == pNum && this.grid[r-1][c-1] == pNum && this.grid[r-2][c-2] == pNum
-			  && this.grid[r-3][c-3] == pNum)
-			  {
-				  return true;
-			  }
-		  }
-	    }
-	    return false;
-	}*/
+	
 }
