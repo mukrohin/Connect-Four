@@ -45,3 +45,10 @@ v0.04
 - Added a rematch open at the end of each game
 - Added new method called reset that resets the board for a rematch
 - Added column labels
+
+Rohin - 05/30/2017
+
+- I made a launcher GUI.
+- I tried to make a game GUI in JavaFX, but I couldn't figure it out.
+- We will just have to use the console GUI.
+- It isn't the best, but it will work.
